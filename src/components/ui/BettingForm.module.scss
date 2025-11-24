@@ -1,0 +1,35 @@
+@import '../../variables.scss';
+
+.container {
+  @include flex(_, $justify: center, $direction: column);
+  border-radius: 8px;
+  border: 1px solid var(--orange);
+  gap: 20px;
+  background: var(--gray-500);
+  width: 100%;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.logo {
+  margin: 0 auto;
+  width: 250px;
+  height: 120px;
+}
+
+.form_box {
+  @include flex(_, $justify: flex-start, $direction: column);
+  width: 100%;
+}
+
+.form_result,
+.form_result-value {
+  display: flex;
+  font-size: 18px;
+  line-height: 12px;
+  gap: 5px;
+}
+
+.form_result-value {
+  font-weight: 400;
+}
