@@ -44,8 +44,8 @@ export default function BettingForm() {
         <ButtonAction />
       </div>
       <div className={styles.form_result}>
-        <p className="form__label-result">Potential Win:</p>
-        <span className="form__result-value">0.00</span>
+        <p className={styles.form_result_text}>Potential Win:</p>
+        <span className={styles.form_result_value}>0.00</span>
       </div>
     </form>
   )

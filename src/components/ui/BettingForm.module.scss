@@ -22,14 +22,12 @@
   width: 100%;
 }
 
-.form_result,
-.form_result-value {
+.form_result {
   display: flex;
-  font-size: 18px;
-  line-height: 12px;
   gap: 5px;
+  @extend %p-18-12;
 }
 
-.form_result-value {
-  font-weight: 400;
+.form_result_value {
+  font-weight: 700;
 }

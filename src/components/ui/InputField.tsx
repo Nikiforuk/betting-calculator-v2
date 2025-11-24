@@ -20,8 +20,8 @@ export default function InputField({
   id,
   name,
   placeholder,
-  // idError,
-  // errorText,
+  idError,
+  errorText,
 }: InputFieldProps) {
   return (
     <>
@@ -35,7 +35,7 @@ export default function InputField({
         placeholder={placeholder}
         required
       />
-      {/* <span id={idError} className={styles.errorText}>{errorText}</span> */}
+      <span id={idError} className={styles.errorText}>{errorText}</span>
     </>
   )
 }

@@ -1,6 +1,7 @@
+@import '../../variables.scss';
+
 .label { 
-  font-size: 18px;
-  line-height: 16px;
+  @extend %p-18-16;
   margin-bottom: 12px;
 }
 
