@@ -1,9 +1,16 @@
 import styles from './ButtonAction.module.scss';
 
-export default function ButtonAction() {
+interface ButtonActionProps {
+  text: string;
+  handleClick: () => void;
+}
+
+export default function ButtonAction({ text, handleClick }: ButtonActionProps) {
   return (
     <>
-      <button type="button" className={styles.button}>Save Your Bet</button>
+      <button type="button" className={styles.button} onClick={handleClick}>
+        {text}
+      </button>
     </>
-  )
+  );
 }

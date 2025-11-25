@@ -13,4 +13,17 @@
   color: var(--black);
   transition: background 0.1s ease, box-shadow 0.1s ease;
   margin-bottom: 10px;
+
+  &:hover {
+    background: var(--gray-500);
+    color: inherit;
+    box-shadow: 0 3px 15px rgba(255, 255, 255, 0.3);
+  }
+}
+
+.buttonDisabled {
+  background: var(--gray-500);
+  border: 1px solid var(--white);
+  color: inherit;
+  cursor: default;
 }

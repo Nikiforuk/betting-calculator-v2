@@ -1,19 +1,13 @@
-import type { ReactNode } from "react"
-import Header from "./Header";
-import Footer from "./Footer";
+import type { ReactNode } from 'react';
 
 interface LayoutProps {
   children: ReactNode;
 }
 
-export default function Layout({children}: LayoutProps) {
+export default function Layout({ children }: LayoutProps) {
   return (
-    <div className='root-container'>
-      <Header />
-        <main className='main'>
-          {children}
-        </main>
-      <Footer />
+    <div className="root-container">
+      <main className="main">{children}</main>
     </div>
-  )
+  );
 }
