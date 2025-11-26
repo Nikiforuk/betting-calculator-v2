@@ -1,0 +1,37 @@
+@mixin flex (
+  $align: center,
+  $justify: center,
+  $direction: row,
+  $gap: null,
+  $wrap: nowrap,
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+
+  @if $gap != null {
+    gap: $gap;
+  }
+}
+
+%p-18-16 {
+  font-size: 18px;
+  line-height: 16px;
+}
+
+%p-18-12 {
+  font-size: 18px;
+  line-height: 12px;
+}
+
+%p-16-12 {
+  font-size: 16px;
+  line-height: 12px;
+}
+
+%p-13-10 {
+  font-size: 13px;
+  line-height: 10px;
+}

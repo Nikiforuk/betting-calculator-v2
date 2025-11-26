@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+.label { 
+  @extend %p-18-16;
+  margin-bottom: 12px;
+}
+
+.select {
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+}

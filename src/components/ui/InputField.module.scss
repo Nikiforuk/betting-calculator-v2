@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+
+.label {
+  @extend %p-18-16;
+  margin-bottom: 12px;
+}
+
+.input {
+  @extend %p-18-12;
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+
+  &::placeholder {
+    @extend %p-18-12;
+  }
+}
+
+.errorText {
+  @extend %p-13-10;
+  text-align: center;
+  font-weight: 400;
+  color: var(--error);
+}
